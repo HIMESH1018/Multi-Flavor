@@ -68,7 +68,7 @@ flutter:
   assets:
     - assets/blue/app_icons/
     - assets/red/app_icons/
-    #- assets/common/
+    - assets/common/app_icons/
 #    - path: assets/blue/app_icons/
 #      flavors:
 #      - red
