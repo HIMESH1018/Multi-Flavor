@@ -68,6 +68,13 @@ flutter:
   assets:
     - assets/blue/app_icons/
     - assets/red/app_icons/
+    #- assets/common/
+#    - path: assets/blue/app_icons/
+#      flavors:
+#      - red
+#    - path: assets/red/app_icons/
+#      flavors:
+#      - blue
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

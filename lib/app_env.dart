@@ -2,12 +2,14 @@
 import 'package:flutter/material.dart';
 import 'package:multi_flavour/utills/custom_colors.dart';
 
-abstract class AppEnvironment {
+ abstract class AppEnvironment {
   static String? baseApiUrl;
   static String? imageUrl;
   static String? appTitle;
   static String? flavour;
   static late ThemeData theme;
+
+
 
   static setupEnv(Environment env) {
     switch (env) {
@@ -18,6 +20,7 @@ abstract class AppEnvironment {
           imageUrl = '';
           flavour = "red";
           theme = AppTheme.redAppTheme;
+
 
           break;
         }
