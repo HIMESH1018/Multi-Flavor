@@ -21,6 +21,7 @@ version: 1.0.0+1
 environment:
   sdk: '>=3.1.2 <4.0.0'
 
+
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
@@ -32,12 +33,16 @@ dependencies:
     sdk: flutter
 
 
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_launcher_icons: ^0.9.2
   flutter_riverpod: ^2.4.10
 
+  #Firebase Related
+  firebase_core: ^2.15.1
+  firebase_messaging: ^14.6.7
 
 
 
@@ -53,22 +58,20 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
   assets:
-    - assets/blue/app_icons/
-    - assets/red/app_icons/
     - assets/common/app_icons/
+    - path: assets/blue/
+      flavors:
+          - blue
+
 #    - path: assets/blue/app_icons/
 #      flavors:
 #      - red
@@ -101,3 +104,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+
